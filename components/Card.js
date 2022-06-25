@@ -1,5 +1,5 @@
-const Card = ({thumbnail, title}) => {
-    return <img className='card' src={thumbnail.url} alt={title}/>
+const Card = ({video:{thumbnail:{url}, title}}) => {
+    return <img className='card' src={url} alt={title}/>
 }
 
 export default Card;

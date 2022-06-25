@@ -1,14 +1,13 @@
 import Card from "./Card";
 
 const Section = ({genre,video}) => {
-    console.log('video', video);
     return(
         <div className='section'>
             <h1>{genre}</h1>
-            <div className="video-feed">
+            <div>
                 {video.map(video =>(
-                    <a key={video.id} src={`/video/${video.slug}`}>
-                        <Card thumbnail={video.thumbnail} title={video.title}/>
+                    <a key={video.id} href={`/video/${video.slug}`}>
+                        <Card video={video}/>
                     </a>
                 ))}
             </div>

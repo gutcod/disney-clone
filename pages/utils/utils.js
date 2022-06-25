@@ -15,3 +15,11 @@ export const videosQuerry = `query{
     }
   }`;
 
+export const accountQuery = `query{
+  account(where:  {id: "cl4od2k7bd38e0cuqjdizammv"}){
+    username,
+    avatar{
+      url
+    }
+  }
+}`
